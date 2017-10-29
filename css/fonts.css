@@ -1,0 +1,12 @@
+/* In type partial */
+@font-face {
+  font-family: 'roboto';
+  src: url("/fonts/roboto/Roboto-Bold_0.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'butler';
+  src: url("/fonts/butler/Butler_Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }

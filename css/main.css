@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.hidden
+{
+	display:none;	
+}
+
+.clearfix:after
+{
+	content: " ";	
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}

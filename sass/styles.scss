@@ -1,0 +1,237 @@
+@import "color";
+@import "mediaqueries";
+@import "spacing";
+@import "fonts";
+
+.hidden {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.black-bg {
+  background-color: $black;
+}
+
+body {
+  background-color: $gunmetal;
+}
+
+.parallax {
+  position: relative;
+  top: 25%;
+  transform: translateY(-50%);
+}
+
+#chisel {
+  display: none;
+  @media screen and (min-width: $breakpoint-large) {
+    position: absolute;
+    left: 0;
+    display: block;
+    margin-top: 40px;
+  }
+}
+
+#shaving {
+  display: none;
+  @media screen and (min-width: $breakpoint-large) {
+    position: absolute;
+    right: 23%;
+    display: block;
+    margin-top: -100px;
+  }
+}
+
+#pop-over-images {
+  display: none;
+  opacity: 0;
+}
+
+#pop-over {
+  display: none;
+  opacity: 0;
+}
+
+.main-container {
+  max-width: 750px;
+  margin-top: 5%;
+  padding: 20px;
+}
+
+.outer-border {
+  padding: 5px;
+  border: 1px solid $white;
+}
+
+.sub-container {
+  background-color: $white;
+
+  a {
+    color: $cloud;
+    float: right;
+    padding-right: 10px;
+  }
+}
+
+.pop-over-container {
+  padding-top: $padding-v-sm;
+  padding-bottom: $padding-v-sm;
+
+  .top-rectangle {
+    @media screen and (min-width: $breakpoint-medium) {
+      position: relative;
+      top: 170px;
+      z-index: 1;
+      height: 230px;
+      max-width: 70px;
+      border: 4px solid $cloud;
+      margin-top: -250px;
+    }
+  }
+
+  h2 {
+    position: relative;
+    z-index: 2;
+    font-family: $butler;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-size: 28px;
+    @media screen and (max-width: $breakpoint-small) {
+      font-size: 35px;
+    }
+
+    span {
+      color: $red;
+    }
+  }
+
+  h4 {
+    position: relative;
+    z-index: 2;
+    font-family: $roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    @media screen and (max-width: $breakpoint-small) {
+      padding: 0 30px;
+    }
+    @media screen and (min-width: $breakpoint-large) {
+      padding: 0 25px;
+    }
+  }
+}
+
+.pop-over-header {
+  p {
+    font-size: 12px;
+  }
+}
+
+.pop-over-text {
+  padding: $padding-v-sm $padding-h-md;
+  font-size: 12px;
+}
+
+.divider {
+  max-width: 70px;
+  min-height: 2px;
+  background-color: $red;
+}
+
+.lower-list {
+  h4 {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    span {
+      margin-left: 8px;
+    }
+  }
+
+  ul li {
+    font-family: $roboto;
+    font-weight: 550;
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+
+.contact {
+  padding-top: $padding-v-md;
+  padding-bottom: $padding-v-sm;
+  background-color: $red;
+  @media screen and (min-width: $breakpoint-medium) {
+    padding-right: $padding-h-md;
+    padding-left: $padding-h-md;
+  }
+
+  h3 {
+    padding: 25px 30px 0;
+    line-height: 18px;
+    font-family: $butler;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: $white;
+    @media screen and (min-width: $breakpoint-medium) {
+      padding: 25px 0 0;
+      line-height: 5px;
+    }
+  }
+
+  p {
+    line-height: 10px;
+    font-family: $roboto;
+    font-size: 10px;
+    color: $white;
+  }
+
+  form {
+    .small-12 {
+      margin-right: 5px;
+    }
+
+    .button {
+      font-family: $butler;
+      text-transform: uppercase;
+      background-color: $black;
+    }
+  }
+}
+
+.checkbox {
+  padding-bottom: $padding-v-sm;
+  padding-left: 20px;
+  @media screen and (min-width: $breakpoint-medium) {
+    padding-bottom: $padding-v-md;
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+  @media screen and (min-width: $breakpoint-large) {
+    padding-left: 100px;
+    padding-right: 20px;
+  }
+
+  input[type="checkbox"] {
+    background-color: none !important;
+  }
+
+  label {
+    font-size: 10px;
+    line-height: 13px;
+    color: $white;
+  }
+}
+
+.bottom-rectangle {
+  @media screen and (min-width: $breakpoint-medium) {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    height: 50px;
+    max-width: 70px;
+    border: 4px solid $cloud;
+    margin-bottom: -55px;
+  }
+}
